@@ -422,21 +422,21 @@ function [v, w] = controletragetoria(Eteta, Ex, Ey)
   #Determinando a saída do programa
   
   if V = 'R'
-    v = ;
+    v = 0.7;
   elseif V = 'L'
-    v = ;
+    v = 0.3;
   elseif V = 'Z'
-    v = ;
+    v = 0;
   end;
   
   if W = 'RN'
-    w = ;
+    w = 300;
   elseif W = 'LN'
-    w = ;
+    w = 210;
   elseif W = 'Z'
-    w = ;
+    w = 0;
   elseif W = 'LP'
-    w = ;
+    w = 30;
   elseif W = 'RP'
-    w = ;
+    w = 120;
   end;
