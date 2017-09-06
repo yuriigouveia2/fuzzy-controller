@@ -18,8 +18,7 @@ function [v, w] = controletragetoria(Eteta, Ex, Ey)
     estado_teta = 'MP';
   elseif Eteta > 2
     estado_teta = 'GP';
-  
-  end
+  end;
   
   #Condiçoes de estato para erro em x
   if Ex < -1
@@ -421,22 +420,22 @@ function [v, w] = controletragetoria(Eteta, Ex, Ey)
  
   #Determinando a saída do programa
   
-  if V = 'R'
+  if V == 'R'
     v = 0.7;
-  elseif V = 'L'
+  elseif V == 'L'
     v = 0.3;
   elseif V = 'Z'
     v = 0;
   end;
   
-  if W = 'RN'
+  if W == 'RN'
     w = 300;
-  elseif W = 'LN'
+  elseif W == 'LN'
     w = 210;
-  elseif W = 'Z'
+  elseif W == 'Z'
     w = 0;
-  elseif W = 'LP'
+  elseif W == 'LP'
     w = 30;
-  elseif W = 'RP'
+  elseif W == 'RP'
     w = 120;
   end;
